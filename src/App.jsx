@@ -33,10 +33,12 @@ function App() {
   }, [])
 
   return (
-    <canvas
-      ref={canvasRef}
-      style={{ width: '90vw', height: '90vh', display: 'block', margin: '5vh auto' }}
-    />
+    <div style={{ width: '100vw', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+      <canvas
+        ref={canvasRef}
+        style={{ width: '90vw', height: '90vh', display: 'block' }}
+      />
+    </div>
   )
 }
 
